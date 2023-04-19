@@ -9,21 +9,35 @@
 
     <!--Place DTM header above this-->
 
+<script>
+window.adobeDataLayer = window. adobeDataLayer || [];
 
-    <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Home Page",
-                siteSection: "",
-                siteSubsection: "",
-                server: ""
-            },
-            customer: {
-                loginStatus: "",
-            },
-        };
-    </script>
+window.adobeDataLayer.push({
+    
+    "event":"pageLoaded",
+        "pageInfo":{
+                "pageName": "home",
+                "siteSection": "home",
+                "siteSection2": "", 
+ 	            "refferingSiteSection": "", 
+	            "domain": "geomatrix",
+	            "lineOfBusiness": "clothing",
+                "pageType": "content"
+                },
+            
+          "userInfo": {
+
+            "loginStatus" : "logged in",
+            "userId" : "12345"
+          }   
+})
+
+
+</script>
+
+
+
+
 
     <title>Geometrixx Clothiers</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
