@@ -7,19 +7,30 @@
 
     <!--Place DTM header above this-->
     
-	<script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageName: "Login",
-                siteSection: "Login",
-                siteSubsection: "Login",
-                server: "Geometrixx Clothiers Site"
-            },
-            customer: {
-                loginStatus: "",
-            },
-        };
+
+<script>
+    window.adobeDataLayer = window. adobeDataLayer || [];
+    
+    window.adobeDataLayer.push({
+        
+        "event":"pageLoaded",
+            "pageInfo":{
+                    "pageName": "Login",
+                    "siteSection": "Login",
+                    "siteSection2": "", 
+                    "domain": "geomatrix",
+                    "lineOfBusiness": "clothing",
+                    "pageType": "login"
+                    },
+                
+              "userInfo": {
+    
+                "loginStatus" : "logged in",
+                "userId" : "12345"
+              }   
+    })
+    
+    
     </script>
 	
 <script>

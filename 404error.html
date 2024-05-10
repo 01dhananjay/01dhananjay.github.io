@@ -11,14 +11,29 @@
 
 
     <script>
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                errorPage: "",
-                server: "Geometrixx Clothiers Site"
-            },
-        };
-    </script>
+        window.adobeDataLayer = window. adobeDataLayer || [];
+        window.adobeDataLayer.push({
+            
+            "event":"pageLoaded",
+                "pageInfo":{
+                        "pageName": "404 error page",
+                        "siteSection": "",
+                        "siteSection2": "", 
+                         "refferingSiteSection": "", 
+                        "domain": "geomatrix",
+                        "lineOfBusiness": "",
+                        "pageType": "error"
+                        },
+                    
+                  "userInfo": {
+        
+                    "loginStatus" : "logged in",
+                    "userId" : "12345"
+                  }   
+        })
+        
+        
+        </script>
 
     <title>Geometrixx|404 Error — Page Not Found</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
